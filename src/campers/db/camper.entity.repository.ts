@@ -8,7 +8,7 @@ import { CamperSchemaFactory } from './camper.schema.factory';
 
 @Injectable()
 export class CamperEntityRepository extends BaseEntityRepository<CamperSchema, Camper> {
-  constructor(@InjectModel(CamperSchema.name),
+  constructor(@InjectModel(CamperSchema.name)
     camperModel: Model<CamperSchema>,
     camperSchemaFactory: CamperSchemaFactory) {
     super(camperModel, camperSchemaFactory);
